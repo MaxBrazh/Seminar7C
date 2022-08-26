@@ -1,0 +1,15 @@
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\bin\Debug\net6.0\TaskSeminar.exe
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\bin\Debug\net6.0\TaskSeminar.deps.json
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\bin\Debug\net6.0\TaskSeminar.runtimeconfig.json
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\bin\Debug\net6.0\TaskSeminar.dll
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\bin\Debug\net6.0\TaskSeminar.pdb
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.csproj.AssemblyReference.cache
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.AssemblyInfoInputs.cache
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.AssemblyInfo.cs
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.csproj.CoreCompileInputs.cache
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.dll
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\refint\TaskSeminar.dll
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.pdb
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\TaskSeminar.genruntimeconfig.cache
+C:\Users\Максим\OneDrive\Desktop\HomeWork C7\TaskSeminar\obj\Debug\net6.0\ref\TaskSeminar.dll
