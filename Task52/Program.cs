@@ -1,4 +1,5 @@
-﻿/* Задача 52.Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+﻿/* Задача 52. Задайте двумерный массив из целых чисел. 
+Найдите среднее арифметическое элементов в каждом столбце.
 Например, задан массив:
 1 4 7 2
 5 9 2 3
@@ -8,35 +9,32 @@
 using static System.Console;
 Clear();
 
-int[,] arr = new int[,]
+int[,] array = new int[,]
     {
     {1,4,7,2},
     {5,9,2,3},
     {8,4,2,4}
     };
+printMiddleColum(array);
 
-
-printColAverage(arr);
-
-
-void printColAverage(int[,]arr)
+void printMiddleColum(int[,] array)
 {
-    Write("Arithmetic mean of each column: ");
-    int[,] revertArr = new int[arr.GetLength(1), arr.GetLength(0)];
-    for (int i = 0; i < revertArr.GetLength(0); i++)
+    WriteLine("Среднее арифметическое элементов в каждом столбце: ");
+    int[,] backArray = new int[array.GetLength(1), array.GetLength(0)];
+    for (int i = 0; i < backArray.GetLength(0); i++)
     {
-        for (int j = 0; j < revertArr.GetLength(1); j++)
+        for (int j = 0; j < backArray.GetLength(1); j++)
         {
-            revertArr[i,j] = arr[j,i];
+            backArray[i, j] = array[j, i];
         }
     }
-    double[] counter=new double[revertArr.GetLength(0)];
-    for (int i = 0; i < revertArr.GetLength(0); i++)
+    double[] count = new double[backArray.GetLength(0)];
+    for (int i = 0; i < backArray.GetLength(0); i++)
     {
-        for (int j = 0; j < revertArr.GetLength(1); j++)
+        for (int j = 0; j < backArray.GetLength(1); j++)
         {
-            counter[i] += revertArr[i, j];
+            count[i] += backArray[i, j];
         }
-        Write($"{Math.Round(counter[i]/ revertArr.GetLength(1),2)} ");
+        Write($"{Math.Round(count[i] / backArray.GetLength(1), 1)}; ");
     }
 }
