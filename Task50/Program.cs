@@ -1,4 +1,5 @@
-﻿/* Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+﻿/* Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
+и возвращает значение этого элемента или же указание, что такого элемента нет.
 Например, задан массив:
 1 4 7 2
 5 9 2 3
@@ -8,50 +9,57 @@
 using static System.Console;
 Clear();
 
-Write("Rows in an array:");
-int m=int.Parse(ReadLine());
-Write("Columns in an array:");
+Write("Задайте количество строк в массиве: ");
+int m = int.Parse(ReadLine());
+Write("Задайте количество столбцов в массиве: ");
 int n = int.Parse(ReadLine());
-double[,]arr=new double[m,n];
-Write("What the number to find in the array:");
-int digit=int.Parse(ReadLine());
-fillArr(arr);
-printArr(arr);
-printArrDigit(arr,digit);
+double[,] array = new double[m, n];
+Write("Укажите какое число найти в массиве: ");
+int k = int.Parse(ReadLine());
+newArray(array);
+printArray(array);
+printArrayDigit(array, k);
 
-void fillArr(double[,]arr)
+
+void newArray(double[,] array)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for(int j = 0; j < arr.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             Random x = new Random();
-            arr[i, j] = x.Next(10);
+            array[i, j] = x.Next(20);
+        }
+    }
+}
 
+
+void printArray(double[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Write($"{array[i, j]}  ");
         }
+        WriteLine();
     }
 }
-void printArr(double[,] arr)
+
+
+void printArrayDigit(double[,] array, int k)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
+    int сount = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < arr.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            Write($"{arr[i, j]} ");
-        }
-        Write("\n");
-    }
-}
-void printArrDigit(double[,] arr,int digit)
-{
-    int checkCounter = 0;
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            if (arr[i, j] == digit) WriteLine($"The number {digit} found in the  {i + 1} row and in the {j + 1} collumn");
-            else checkCounter++;
+            if (array[i, j] == k)
+                WriteLine($"Число {k} найдено в массиве: строка {i + 1}, столбец {j + 1}");
+
+            else сount++;
         }
     }
-    if (checkCounter == arr.Length) WriteLine("There is no such number");
+    if (сount == array.Length)
+        WriteLine("Такого числа в массиве нет");
 }
